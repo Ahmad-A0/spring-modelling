@@ -1,0 +1,50 @@
+
+- timestamp: 2024-08-06 17:10:48,812
+  level: WARNING
+  message: 
+    - "/home/ahmad/.local/share/pipx/venvs/janus-core/lib/python3.12/site-packages/mace/calculators/mace.py:128: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature."
+    - "torch.load(f=model_path, map_location=device)"
+  trace: warnings
+  line: 112
+
+
+- timestamp: 2024-08-06 17:10:49,042
+  level: INFO
+  message: 
+    - "CUDA version: 12.1, CUDA device: 0"
+  trace: torch_tools
+  line: 58
+
+
+- timestamp: 2024-08-06 17:10:49,044
+  level: INFO
+  message: 
+    - "Single point calculator configured"
+  trace: single_point
+  line: 158
+
+
+- timestamp: 2024-08-06 17:10:49,048
+  level: INFO
+  message: 
+    - "Velocities reset at step 0"
+  trace: md
+  line: 372
+
+
+- timestamp: 2024-08-06 17:10:49,048
+  level: INFO
+  message: 
+    - "Starting molecular dynamics simulation"
+  trace: md
+  line: 738
+
+
+- timestamp: 2024-08-06 17:10:50,379
+  level: WARNING
+  message: 
+    - "/home/ahmad/.local/share/pipx/venvs/janus-core/lib/python3.12/site-packages/ase/io/extxyz.py:311: UserWarning: Skipping unhashable information real_time"
+    - "warnings.warn('Skipping unhashable information '"
+  trace: warnings
+  line: 112
+

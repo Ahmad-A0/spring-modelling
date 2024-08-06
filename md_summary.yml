@@ -1,0 +1,46 @@
+command: janus md
+inputs:
+  calc:
+    arch: mace_mp
+    calc_kwargs:
+      model: small
+    device: cuda
+    read_kwargs: {}
+  ensemble: nve
+  ensemble_kwargs: {}
+  equil_steps: 0
+  file_prefix: null
+  log: md.log
+  minimize: false
+  minimize_every: -1
+  minimize_kwargs: {}
+  post_process_kwargs: {}
+  remove_rot: false
+  rescale_every: 10
+  rescale_velocities: false
+  restart: false
+  restart_every: 1000
+  restart_stem: null
+  restarts_to_keep: 4
+  rotate_restart: true
+  seed: 2024
+  stats_every: 100
+  stats_file: null
+  steps: 100000
+  struct:
+    formula: C240H2O
+    n_atoms: 243
+    struct_name: concat
+    struct_path: concat.xyz
+  struct_name: concat
+  temp: 10.0
+  temp_end: null
+  temp_start: null
+  temp_step: null
+  temp_time: null
+  timestep: 1.0
+  traj_append: false
+  traj_every: 100
+  traj_file: null
+  traj_start: 0
+start_time: 06/08/2024, 17:10:49

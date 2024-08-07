@@ -48,3 +48,11 @@
   trace: warnings
   line: 112
 
+
+- timestamp: 2024-08-07 16:50:07,897
+  level: INFO
+  message: 
+    - "Molecular dynamics simulation complete"
+  trace: md
+  line: 747
+
